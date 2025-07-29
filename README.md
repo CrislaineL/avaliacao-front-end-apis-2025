@@ -75,3 +75,13 @@ Serão avaliados os seguintes pontos:
 1. Crie um fork deste repositório.
 2. Implemente a solução.
 3. Faça commits frequentes e claros.
+
+# Fotos
+
+|print1|
+|:-:|
+|![i2](login.jpg)|
+|![i3](modal.jpg)|
+|![i4](posts.jpg)|
+|![i5](posts2.jpg)|
+
