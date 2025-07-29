@@ -1,80 +1,50 @@
-*{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --p1: #000000;
-    --p2: #333333;
-    --p3: #cccccc;
-    --p4: #ffffff;
-    --p5: #80e459;
+  --p1: #000000;
+  --p2: #333333;
+  --p3: #cccccc;
+  --p4: #ffffff;
+  --p5: #80e459;
 }
+
 body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    video.bg-video {
-      
-      position: fixed;
-      right: 0;
-      
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      position: fixed; /* ou absolute */
-      top: 4px; /* move para baixo */
-    }
-
-    .content {
-      position: relative;
-      z-index: 1;
-      color: white;
-      text-align: center;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    
-
-header {
-    width: 100%;
-   display: flex;
-   align-items: center; /* Alinha verticalmente os itens do header */
-   background-color: rgb(19, 19, 19);
-   padding: 10px 90%; /* Ajusta o padding para melhor espaçamento */
-    
-button#botao {
-    
-    background: #80e459;
-  padding: 10px;
-  border: none;
-  display: flex;
-  justify-content: flex-end;
-  
+  height: 100%;
+  overflow: hidden;
+  background: var(--p1);
 }
 
-}  
-
+video.bg-video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 
 form#expenseForm {
-  background: transparent;
-  border-radius:#2d4d20 ;
-  padding: 40px ;
-  position: fixed; /* ou absolute */
-  top: 38%; /* move para baixo */
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.61);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 40px;
+  position: fixed;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
   width: 100%;
-  margin-left: 21%;
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 label {
@@ -87,28 +57,28 @@ input[type="text"],
 input[type="password"] {
   padding: 10px;
   border: 2px solid var(--p5);
-  border-radius: var(--p5);
+  border-radius: 6px;
   outline: none;
-  transition: border-color var(--p5);
   font-size: 1rem;
+  transition: border-color 0.3s ease;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus {
-  border-color: var(--p5);
+  border-color: var(--p4);
 }
 
-button#botao {
+button#botaoLoginForm {
   background-color: var(--p5);
-  color: white;
+  color: var(--p4);
   padding: 10px;
   border: none;
-  border-radius: var(--p1);
+  border-radius: 6px;
   cursor: pointer;
   font-size: 1rem;
-  transition: background-color var(--p2);
+  transition: background-color 0.3s ease;
 }
 
-button#botao:hover {
-  background-color: var(--p5);
+button#botaoLoginForm:hover {
+  background-color: #6cc646;
 }

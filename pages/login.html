@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
-    <title>Login Posts</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <title>Login</title>
 </head>
-
 <body>
-    <header> 
+  <header>
+    <h1>Login Posts</h1>
+  </header>
 
-     <button id="botao" type="button">Entrar | </button>
-     <button id="botao" type="button"> Sair </button>
-    </header>
-    <br><br><br>
-<video autoplay muted loop class="bg-video">
-    <source src="login.mp4" type="video/mp4">
-  </video>
+  <main>
+    <video autoplay muted loop class="bg-video">
+      <source src="login.mp4" type="video/mp4" />
+    </video>
 
-<form id="expenseForm">
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required /><br />
+    <form id="loginForm">
+      <label for="email">Usuário:</label>
+      <input type="text" id="email" name="email" required />
 
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required /><br />
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required />
 
-        <button id="botao" type="button">Entrar</button>
+      <button id="botaoLoginForm" type="submit">Entrar</button>
     </form>
+  </main>
 
+  <script src="../scripts/login.js"></script>
 </body>
-<script src="../scripts/login.js"></script>
-
 </html>
